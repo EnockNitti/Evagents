@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="Evagents"
 	ProjectGUID="{C8B5D053-991F-433B-8C74-E6B9AFFEF157}"
 	RootNamespace="source"
@@ -47,7 +47,7 @@
 				FavorSizeOrSpeed="1"
 				EnableFiberSafeOptimizations="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="$(SolutionDir)SOURCE\irrKlang"
+				AdditionalIncludeDirectories="&quot;$(SolutionDir)SOURCE\irrKlang&quot;;&quot;C:\Program Files\Microsoft SDKs\Windows\V6.1\VC\INCLUDE&quot;"
 				PreprocessorDefinitions="WIN32;_WINDOWS;_DEBUG"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
@@ -72,7 +72,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib opengl32.lib glui32d.lib glut32.lib glu32.lib irrKlang.lib $(NOINHERIT)"
 				Version="0.0"
-				AdditionalLibraryDirectories="SOURCE"
+				AdditionalLibraryDirectories="&quot;C:\Program Files (x86)\Microsoft Visual Studio 9.0\VC\redist\Debug_NonRedist\x86\Microsoft.VC90.DebugCRT&quot;;D:\Repos\Evagents\Evagents\SOURCE"
 				IgnoreDefaultLibraryNames=""
 				AddModuleNamesToAssembly=""
 				GenerateDebugInformation="true"
@@ -149,6 +149,7 @@
 				XMLDocumentationFileName="$(IntDir)\obj\"
 				WarningLevel="3"
 				DebugInformationFormat="0"
+				DisableSpecificWarnings="4305;4244;4018;4996;4800"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -163,7 +164,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				LinkLibraryDependencies="true"
-				AdditionalDependencies="$(NOINHERIT) kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib opengl32.lib glut32.lib glu32.lib irrKlang.lib LIBCMT.lib"
+				AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib opengl32.lib glut32.lib glu32.lib irrKlang.lib $(NOINHERIT)"
 				Version="0.0"
 				LinkIncremental="0"
 				AdditionalLibraryDirectories="SOURCE"

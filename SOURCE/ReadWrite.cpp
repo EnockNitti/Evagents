@@ -847,6 +847,6 @@ void ReadWrite::loadWorld(World *world, float &xtranslate, float &ytranslate, fl
 		world->processOutputs(true);
 
 	} else { //DOH! the file doesn't exist!
-		printf("ERROR: Save file specified, '%s' doesn't exist!\n", address);
+		printf("ERROR: Save file specified, '%s' doesn't exist!\n", address.c_str());
 	}
 }
